@@ -1,8 +1,9 @@
 const isProd = String(process.env.NODE_ENV) === 'production'
-const isTest = String(process.env.NODE_ENV) === 'test'
+// const isTest = String(process.env.NODE_ENV) === 'test'
+// presets: [['@babel/preset-env', {modules: isTest ? 'commonjs' : false}], '@babel/preset-react'],
 
 module.exports = {
-  presets: [['@babel/preset-env', {modules: isTest ? 'commonjs' : false}], '@babel/preset-react'],
+  presets: ['@babel/preset-env', '@babel/preset-react'],
   plugins: [
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-proposal-class-properties',
