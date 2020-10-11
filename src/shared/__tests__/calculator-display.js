@@ -1,9 +1,6 @@
 import React from 'react'
-import serializer from 'jest-emotion'
 import {render} from '@testing-library/react'
 import CalculatorDisplay from '../calculator-display'
-
-expect.addSnapshotSerializer(serializer)
 
 test('Should make snapshot', () => {
   const {container} = render(<CalculatorDisplay value="0" />)
