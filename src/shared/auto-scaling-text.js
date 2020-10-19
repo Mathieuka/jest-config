@@ -13,17 +13,17 @@ class AutoScalingText extends React.Component {
       return 1
     }
     const parentNode = node.parentNode
-
+    
     const availableWidth = parentNode.offsetWidth
     const actualWidth = node.offsetWidth
     const actualScale = availableWidth / actualWidth
-
+    
     if (actualScale < 1) {
       return actualScale * 0.9
     }
     return 1
   }
-
+  
   render() {
     const scale = this.getScale()
 

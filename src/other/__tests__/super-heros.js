@@ -1,4 +1,4 @@
-import {getflyingSuperHero} from '../super-hero'
+import {getflyingSuperHero} from '../super-heros'
 
 test('return super hero that can fly', () => {
   const hero = getflyingSuperHero()
