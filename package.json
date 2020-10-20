@@ -12,10 +12,15 @@
     "build": "webpack --mode=production",
     "postbuild": "cp ./public/index.html ./dist/index.html",
     "start": "serve --no-clipboard --listen 8080 dist",
-    "lint": "eslint .",
+    "lint": "jest --config test/jest.lint.js",
     "format": "prettier \"**/*.js\" --write",
     "validate": "npm run test && npm run build",
     "setup": "npm run setup && npm run validate"
+  },
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "ignorePath": "./.gitignore"
+    }
   },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
@@ -41,6 +46,7 @@
     "is-ci-cli": "^2.1.2",
     "jest": "^26.5.2",
     "jest-emotion": "^10.0.32",
+    "jest-runner-eslint": "^0.10.0",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "serve": "^9.1.0",
