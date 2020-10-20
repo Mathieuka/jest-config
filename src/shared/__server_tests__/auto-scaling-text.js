@@ -1,8 +1,8 @@
 import React from 'react'
-import {render} from '@testing-library/react'
+import ReactDOMServer from 'react-dom/server'
 import AutoScalingText from '../auto-scaling-text'
 
 test('renders ', () => {
-   render(<AutoScalingText/>)
+   ReactDOMServer.renderToString(<AutoScalingText />)
 })
 
