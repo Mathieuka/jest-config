@@ -4,7 +4,8 @@
   "description": "See how to configure Jest and Cypress with React, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "dev": "webpack-serve",
@@ -37,6 +38,7 @@
     "eslint-config-kentcdodds": "^14.0.0",
     "file-loader": "^1.1.11",
     "identity-obj-proxy": "^3.0.0",
+    "is-ci-cli": "^2.1.2",
     "jest": "^26.5.2",
     "jest-emotion": "^10.0.32",
     "prettier": "^1.13.7",
