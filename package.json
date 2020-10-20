@@ -47,6 +47,7 @@
     "jest": "^26.5.2",
     "jest-emotion": "^10.0.32",
     "jest-runner-eslint": "^0.10.0",
+    "jest-watch-select-projects": "^2.0.0",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "serve": "^9.1.0",
